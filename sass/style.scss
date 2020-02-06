@@ -1,0 +1,90 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;  
+}
+$PinkHeader:hsl(322, 100%, 66%);
+$PinkDarkHeader:hsla(322,100%,58%,1.00);
+$PaleCyanHeader:hsl(193, 100%, 96%);
+$DarkCyanHeader:hsl(192, 100%, 9%);
+$GrayishBlueHeader:hsl(208, 11%, 55%);
+$BoxShadowHeader: 0 8px 16px 0 rgba(41,109,140,0.20);
+$BoxShadowHeaderActive:0 9px rgba(21,21,21,0.17);
+$WhiteHeader:white;
+
+@mixin btn_header {
+
+        border: none;
+        border-radius: 25px;
+        box-shadow: $BoxShadowHeader;
+        font-size: 0.8rem;
+        font-weight: 600;
+        cursor: pointer;
+}
+
+header{
+    background-image:url("../images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:$PaleCyanHeader;
+    height: 700px;
+    width: 1440px;
+    margin: auto;
+    .div_header1{
+        padding: 55px 70px;
+        .btn_header1{  
+            @include btn_header; 
+            background-color:$WhiteHeader;
+	        color:$DarkCyanHeader ;
+            margin-left: 875px;
+            padding: 10px 55px;
+        }
+        .btn_header1:active {
+            background-color:$WhiteHeader;
+            box-shadow: $BoxShadowHeaderActive;
+            transform: translateY(4px);
+          }
+    }
+    .flexContainer_header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 546px;
+
+        .flex_item_header1{
+            flex-grow: 1;
+            margin-top: 100px;
+            margin-left: 68px;
+            width: 360px;
+            h1{
+                font-size: 41px;
+            }
+            p{
+                color: $DarkCyanHeader;
+            }
+            .btn_header2{
+                background-color: $PinkHeader;
+                color: $PaleCyanHeader;
+                padding: 15px 55px;
+                @include btn_header;
+            }
+            .btn_header2:active{
+                background-color:$PinkDarkHeader;
+                box-shadow:$BoxShadowHeaderActive;
+                transform: translateY(4px);
+            }
+        }
+        .flex_item_header2{
+            flex-grow: 3;
+            background-image: url("../images/illustration-mockups.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-right: 79px;
+            
+    }
+    }}

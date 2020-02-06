@@ -1,8 +1,71 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   font-size: 18px;
   font-family: 'Poppins', sans-serif; }
+
+header {
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ebfbff;
+  height: 700px;
+  width: 1440px;
+  margin: auto; }
+  header .div_header1 {
+    padding: 55px 70px; }
+    header .div_header1 .btn_header1 {
+      border: none;
+      border-radius: 25px;
+      box-shadow: 0 8px 16px 0 rgba(41, 109, 140, 0.2);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      background-color: white;
+      color: #00252e;
+      margin-left: 875px;
+      padding: 10px 55px; }
+    header .div_header1 .btn_header1:active {
+      background-color: white;
+      box-shadow: 0 9px rgba(21, 21, 21, 0.17);
+      transform: translateY(4px); }
+  header .flexContainer_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 546px; }
+    header .flexContainer_header .flex_item_header1 {
+      flex-grow: 1;
+      margin-top: 100px;
+      margin-left: 68px;
+      width: 360px; }
+      header .flexContainer_header .flex_item_header1 h1 {
+        font-size: 41px; }
+      header .flexContainer_header .flex_item_header1 p {
+        color: #00252e; }
+      header .flexContainer_header .flex_item_header1 .btn_header2 {
+        background-color: #ff52bf;
+        color: #ebfbff;
+        padding: 15px 55px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0 8px 16px 0 rgba(41, 109, 140, 0.2);
+        font-size: 0.8rem;
+        font-weight: 600;
+        cursor: pointer; }
+      header .flexContainer_header .flex_item_header1 .btn_header2:active {
+        background-color: #ff29b0;
+        box-shadow: 0 9px rgba(21, 21, 21, 0.17);
+        transform: translateY(4px); }
+    header .flexContainer_header .flex_item_header2 {
+      flex-grow: 3;
+      background-image: url("../images/illustration-mockups.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-right: 79px; }
 
 .footer_box {
   box-sizing: border-box;
@@ -52,3 +115,4 @@
 
 .footer_card4 p {
   margin-top: 210px; }
+
